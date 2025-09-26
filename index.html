@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="intro">
+            <h1>Calculadora de IMC</h1>
+            <p>Descubra rapidamente seu ídice de Massa Corporal</p>
+
+        </section>
+
+        <div class="container">
+            <section class="formulario">
+                <input type="number" name="altura" id="altura" placeholder="Altura (m)"> <br>
+                    <input type="number" name="peso" id="peso" placeholder="Peso (kg)"> <br>
+                    <button id="calcular" onclick="calculo()">Calcular</button>
+            </section>
+            <section class="result">
+                <div>
+                        <p id="resImc">IMC: -- </p>
+                        <p id="resClassificacao">Classificação: --</p>
+                    </div>
+        </div>
+        
+        </section>
+        <hr>
+        
+        <h2>Faixas de IMC</h2>
+
+        <section class="faixasIMC">
+            <div class="faixaAbaixoPeso">
+                <h3>Abaixo de 18,5</h3>
+                <p>Abaixo do peso</p>
+            </div>
+            <div class="faixaPIdeal">
+                <h3>18,5 a 24,9</h3>
+                <p>Peso ideal</p>
+            </div>
+            <div class="faixaAcimaPeso">
+                <h3>25 a 29,9</h3>
+                <p>Acima do peso</p>
+            </div>
+            <div class="faixaObeso">
+                <h3>30 a 34,9</h3>
+                <p>Obesidade</p>
+            </div>
+            <div class="faixaObesoGrave">
+                <h3>35 ou mais</h3>
+                <p>Obesidade Mórbida</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="aqv.js"></script>
+</body>
+</html>
+
